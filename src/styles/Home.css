@@ -2,90 +2,34 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 40px;
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  color: white;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
+  padding-inline: 20px;
+  text-align: center;
 
+}
 .meetContainer {
   display: flex;
-  align-items: center;
+  padding-inline: 20px;
+  height: 80vh;
+  gap: 10vw;
   justify-content: center;
-  gap: 6rem;
-  min-height: 85vh;
-  padding: 40px;
-  background: linear-gradient(135deg, #0f172a, #1e293b);
-  color: white;
-  flex-wrap: wrap;
 }
+
+
 
 .leftPanel {
-  flex: 1;
-  min-width: 300px;
+  height: 100%;
   display: flex;
   align-items: center;
-}
 
-.leftPanel h1 {
-  font-size: 3.2rem;
-  line-height: 1.2;
-  font-weight: 700;
-}
-
-.leftPanel p {
-  margin-top: 15px;
-  font-size: 1.1rem;
-  color: #cbd5e1;
-  max-width: 500px;
 }
 
 .rightPanel {
-  flex: 1;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
 .rightPanel > img {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 24px;
-  object-fit: cover;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
-  transition: transform 0.4s ease;
-}
-
-.rightPanel > img:hover {
-  transform: scale(1.03);
-}
-
-/* Responsive Design */
-@media (max-width: 900px) {
-  .meetContainer {
-    flex-direction: column-reverse;
-    text-align: center;
-    gap: 3rem;
-    padding: 30px 20px;
-  }
-
-  .leftPanel {
-    justify-content: center;
-  }
-
-  .leftPanel h1 {
-    font-size: 2.4rem;
-  }
-
-  .rightPanel > img {
-    max-width: 90%;
-  }
-
-  .navBar {
-    padding: 15px 20px;
-  }
+  width: 30vw;
+  height: auto;
+  border-radius: 20px;
 }
